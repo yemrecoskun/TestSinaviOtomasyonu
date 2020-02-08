@@ -1,0 +1,69 @@
+﻿@using TestSinaviOtomasyon.Service
+@{
+    ViewBag.Title = "OgretimUyesiSayfa";
+    Layout = null;
+    ServiceCode servis = new ServiceCode();
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/OgretimUyesi.css" rel="stylesheet" />
+</head>
+<body>
+
+    <br />
+    <div style="width:100%;background-color:green;height:100px">
+        <img src="~/image/images1.png" style="margin-left:auto;margin-right:auto;float:left;height:100px;" />
+        @foreach (var item in servis.KullaniciListele())
+        {
+            if (Globals.Globals.ogretim_id == item.kullanici_id)
+            {
+                Globals.Globals.id = item.kullanici_ad;
+                <h1 style="margin-left:auto;margin-right:auto;margin-top:50px;padding:30px;">KOCAELİ ÜNİVERSİTESİ - ÖĞRETİM ÜYESİ - @item.kullanici_ad @item.kullanici_soyadi</h1>
+            }
+        }
+    </div>
+    <br />
+    <br />
+    <br />
+        <div class="box" style="margin-left:auto;margin-right:auto;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="box-part text-center" style="background-color:green;position:relative;left:45%;">
+                            <div class="title">
+                                <h3>Ders Listele</h3>
+                            </div>
+                            <div class="text">
+                                <span>Açıklama: Öğretim Üyesine Atanan Aktif Döneme Ait Dersleri Listeler</span>
+                            </div>
+                            <a href="/Home/OgretimDersListele">GİT</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="box-part text-center" style="background-color:green;position:relative;left:45%;">
+                            <div class="title">
+                                <h3>Sınav Oku</h3>
+                            </div>
+                            <div class="text">
+                                <span>Açıklama: Öğretim Üyesine Ait Derslerin Test Sınavını Okur.</span>
+                            </div>
+                            <a href="/Home/OgretimUyesiSinav">GİT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br />
+    <br />
+    <div class="form-check">
+        <a href="/Home/Login"><button type="submit" class="btn btn-danger" style="width:100%;background-color:green;">ÇIKIŞ</button></a>
+    </div>
+    <br />
+</body>
+</html>

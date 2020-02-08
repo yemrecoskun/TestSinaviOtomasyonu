@@ -1,0 +1,130 @@
+AHMET       KARÝP       165003020AACEAEBDEBCDACCEDDBCEABBAECCECC                                                                      
+ÝSMAÝL      YILDIZ      165003026BEEABCDEAADCABCABBEDBBEDCABDADC                                                                      
+ÞAHÝN       ÇEVÝK       165003046AACEACBDCBCDABCEDECEECDEABADAEE                                                                      
+MUHAMMET    AÐDAK       165003008AACEBDDDEBECABDECDAECDDEADDBAEE                                                                      
+SERHAT      KURTGÖZ     165003001BEAAEBDAEBBCADDDADEDCBEBBEACCDA                                                                      
+FATÝH       BABACANOÐLU 165003036AACCAEBDEBCBAACEDECAEDDDBDBECDE                                                                      
+FURKAN      GÜMÜÇ       165003003AABCBEBDEBCCABCEDDDEADBBAAEDABE                                                                      
+FURKAN      ATEÞ        165003017AAEEBDBDEBCDABCEDABDCDDDAECBABC                                                                      
+EMRE        GEDÝK       165003010BAABDCDECEDAACCADCEAEBCABDBDBAC                                                                      
+MUSTAFA     AYKUTLÝ     165003016ACCEDCEDEBCEADCEBDAEECDEAADEEBC                                                                      
+SELÇUK      ÖMÜT        165003032ACCEEDEACBDCAAAEDBCEACBAAD                                                                           
+SADIK       HIZLAN      165003039B  A      A                                                                                          
+ÖZGÜR       GÖKBUDAK    165009042BDBABEDEAEABABCEDDCBCADCCEABCAD                                                                      
+M EMRE      ÖZ          165003018BECDABDACEDCAAADBBDCCACACEBDAAD                                                                      
+RECEP       ÖZDEM       165003038AAEEDBDDEBADADCEEBBEADDAAABBABE                                                                      
+YUSUF EMRE  ALNIDELÝK   165003023AACEBEBDEBDDACCEDAADADBDAACCABE                                                                      
+ALPAY       ORHAN       165003015ACAEBDCCEBCBABCEDDCCEDDBAECDBBE                                                                      
+YUNUS EMRE  KARADUMAN   165009011AACEACBEEBEBCCEADEEDBCBABAEBEED                                                                      
+ÖZGÜR       YILMAZ      165003029BBADAEBAABDBABCEDDDDABDDCEBAAAD                                                                      
+FURKAN      KARACA      165003012AACEDDBDEBCDACCECABBEADDAECAABC                                                                      
+OÐUZ        ESER        165003024BDABDEDAABDCABBAAEADEBEBBECDAC                                                                       
+ÖMER FARUK  AKTAÞ       165005016ACCEAEBDEBDDABCEDACDEDDBAECECBA                                                                      
+HAKAN       ATAN        165003025BEAABCDBAABBADAADCDDEBCBCAACAED                                                                      
+GÖKHAN      ÇÝNE        165003033AABEDDEAEBCBECCEBBCACDBCAEC AEC                                                                      
+UMUT        KARACA      165003011AACDDEBCBDCCAACEDEBEC BEAEBBADC                                                                      
+UYGAR       SAATÇIOÐLU  165003005ACCEAECDCBAEACCEDABCEDDEAAABCBE                                                                      
+MESUT       SEVER       165005006BABDAEBDCAEAACCCDEDDACCCDEADBEA                                                                      
+MUSTAFA     VELÝOÐLU    165003044BEADBBDDDBDCADBEABDDCBECCEBAAEC                                                                      
+ARÝF MERTCAN ÖZSARI     165003035BBADECDDEECCABBEACEDBBECCEEDEBC                                                                      
+RAÝF        BAHAR       165003031AACDBDBCBBCCDAAECCDACCEEAABBABB                                                                      
+MUSACAN     BOZOÐLU     165003028BDBBEBDDEACCADCADCADCEDACBADBAA                                                                      
+GÖZDE       SEVER       165009001BAADCCDACEDBABBCABDDCED CAA CA                                                                       
+ENES        GENÇOÐLU    165003013BDABEADEACABCDBBABBDEBDDCAEEABC                                                                      
+MERTCAN     GELÝR       165009036AABEAEADEBDEADCEDABAADBEAACEEAD                                                                      
+MURAT       AKGÜN       165003042BEABABDACEACADABDBEEBBBBCAAABDD                                                                      
+EMRE        ÇOBAN       165003045ACCEDEBDBBDBADDEDADCECDDAAAEAEE                                                                      
+SALÝH       GÜNGÖR      165005024BABAAEDACB BABEE B    E BA  B                                                                        
+ÖMER        ALTIOK      165009023BBDCEED E BCAB E CBE  EDCE                                                                           
+MEHMET EMÝN BAYRAM      165005011AEABADBCEBECCAAEADADBDBEAADBCAE                                                                      
+MUSTAFA     KIYAK       165003041B                                                                                                    
+SEZER       EVYAPAN     165003004BDBBDCDACCDCADAEAADDCDEDBEADBEC                                                                      
+TUÐBA       KÜREKÇÝ     165009006AACBDDBEEBAECDEBDCCDEDBAAECDADB                                                                      
+UMUT        CANKILIÇ    165009021AAAEBEBDCDADEBEEDABDBDBBAABDBCC                                                                      
+MÜCAHÝT     KOPAR       165009037BBABDAAACCBEABCECAEDEDCEBEBDACD                                                                      
+OÐUZHAN     SEÇGÝN      165005025ACCEDDBDEBCBCADBABACDDDBAEBECEA                                                                      
+CAFER       YARAN       165003030BEABECBEEEDCABBAAEDDBBCBCABBCBC                                                                      
+ÝSMAÝL      AYDIN       165009030BAABEBDEABBBABCECDEDBCAEAABDDAE                                                                      
+ALP BUÐRA   AÐIRCAN     165005003ACCE ADDEBABEDCCECCCA EBADBBBCB                                                                      
+ÝBRAHÝM     AVCIOÐLU    165009027BEBD BBCDBBEAB EAEEDECEBDECDBBE                                                                      
+HÜSNÜCAN    KARAKOÇ     165003034BADDACDAAEEBAAACCDEDCECEBECEDDD                                                                      
+ERDEM       ÇEVRE       165003027BEEDEADEAACCAACDBB DC E C                                                                            
+ÜLKÜ        ÖREN        165009032AAABCCACCBEEAACEDADEECBBAECDCDB                                                                      
+FURKAN MUSA KARACAN     165009020BDACEAEACADDBDBEDB                                                                                   
+ALÝ         BÖCEK       163003002AC   ACBCB  ACCE D  CD B                                                                             
+BURAK       SAYGI       165003037BAACAABAADBDAAECEEEEAEDCEAEAEEB                                                                      
+            DEMÝRKAN    165009016BEAEDDDAEBCAADCEDBBDABEECCEBADC                                                                      
+MUSTAFA     ÖZDEMÝR     165005007AAEEAECEEBAEAABEDDBBCDBCAECBEBE                                                                      
+BATUHAN     TEKÝN       165003006AB BECBCEBACAACED BEED EA                                                                            
+MUSA        BAHADIR     165009014AAAEBCADBBAECCEEBBDDBDDAAECEABA                                                                      
+ERD M       ERGÜNEY     165003009BBCAACDCEEDCADBEDDCDCBECCEADBDA                                                                      
+CEM         ÖNER        165003019BDDADBAEEAACACCDCBEABBCBCEAECAE                                                                      
+ONUR        USTAOÐLU    165001021BEBDEEDCCCDBAABAABDDADDCDEABCDB                                                                      
+METÝN       KAYA        165001018ACCEBEADBBCEACCEDAADBCDBAAC EEC                                                                      
+SERCAN      SATILMIÞ    165005033ACCDEABAEBECADAECECDBBBDDBBBBBE                                                                      
+ENES        DUYGAL      165001026BEBDECDCAEDCAABAABDDADDCDEACBEC                                                                      
+ÝBRAHÝM     ÖZCAN       165005004BEECDCDAAADCABBDABDDCBECBDBDACD                                                                      
+FETHULLAH   ELGÜN       165005040AA BDECD BCBDCAED AEBDBDDE                                                                           
+MUSTAFA     ÖZTÜRK      165001017BEAEECDAABEEABCEABEEBBECBECDABD                                                                      
+BURHAN      UCUZOVA     165005028BBADAEAECABAACBDCBAEBADACEAADAE                                                                      
+YÜCEL       PEKAL       165005031BABAECDEABDBACCEBADDBBEDCEAECDE                                                                      
+ALÝ         KILIÇKAYA   165001002BAABEEDECACCABCEABBEEBEBCEAEBDD                                                                      
+OKAN        ALBUÐA      165001008BBBCCCDBCADCADCEAEDBEBEBCCDCBEB                                                                      
+HASAN       ÝSKENDER    165001025AACDAEBDDBDEABCEDBBCCDBCAADDEBE                                                                      
+GÖKHAN      KAR BAY     165005023ADECDEBEEBAEECCEBEBAEDDBADCBDEE                                                                      
+FURKAN      AÐCA        165001023BBBBCCABECDAABBEADDDBCEDCEADECE                                                                      
+ÝLKER       ÞÝMÞEK      165001029BEADDCCCEEEEABAECBBDADEDBDABDCA                                                                      
+KORAY       EROL        155005024ADCECDBAABEBABEEEDDADCDBAECDADD                                                                      
+KAAN        KILIÇ       165005009ACBEEEBDBBAAACCEDECEEDBEEACEACC                                                                      
+MUSTAFA     YILDIRIMER  165001015ACCEBEDDEBCEAACEDDAEACDBAECBBEE                                                                      
+SEZER       MADEN       165009035ABCEDCADABDCACCEBDEEBDBACAADABA                                                                      
+ERKAN       KÖKSAL      165009017BAADAEDEABDCACEBBDDEACEECADCBDB                                                                      
+MEHMET      ASLAN       165009008AC E DACEBADBBDBEDBCADBEADBDBEC                                                                      
+CEM         ALTINTAÞ    165001040BDBAACDCCAACADCECBEDAEDDDAADBCD                                                                      
+ANIL        SARIALTIN   165001043BBEDEEBACADDADAEDBDDCAAECECAAAD                                                                      
+REFÝK       KÝRET       165001030BAAAECDBECABABAEDCAADEBCBADEECA                                                                      
+TUNAHAN     TOPUZ       165005015BBEADBCEEEACAABCCBBBBCDCCACDDEB                                                                      
+CELÝL       KAYA        165009018AAEDAEBBEBACABCECECDECDEAAEBABE                                                                      
+SEMÝH       ÖZDEN       165005018BEADCBDACDDCABAEBEDEABECCCCEDDA                                                                      
+EMRE        ATICI       165005012BEADECDEAECCADAEBCDBABEACABCBAD                                                                      
+PELÝNSU     EREN        165001037ACDEDCBDEBCDACBECADACCBBAEDBCBD                                                                      
+KUBÝLAY     ÇELÝK       165005005BCAEBCAADEAEABCEBDBDBCACCEEABCB                                                                      
+BELEN       KORKMAZ     165001031BBADBEDABBBAABCEBDCDAABDCABDAAB                                                                      
+YÜKSEL      TOYGUN      165001035BDADDADAEECCADBEABEDCCADDACACDB                                                                      
+CEM         KAYA        165003007AACADDBDCBDEABCEDDCDCDDBAECEABC                                                                      
+BATUHAN     DIÞHAN      165001013BBBBDD EAAECABBDBCEDCCECCABDDAB                                                                      
+DOÐAN AYBERK AYGÖR      165001034BDADEDDCEEAAEAACAADDCBDECE                                                                           
+MURAT       BÝLBAY      165001033BBADCCBECACCABAEAEDDCBDCCE DBDE                                                                      
+TOLGA       AKTAÞ       165001024AABCEDBDBBBCACCEBADACABBDABEABE                                                                      
+ANIL        ÖTER        165009012AABEDDCAEBCDABEECDADEDDAAACDCEE                                                                      
+ÖZGÜR       CÜSTAN      165009041BCBE AEDB EEEAEDDE AE CEE  B C                                                                       
+YASÝN       TOLAN       165001016BEABDADCBCBCABDEABEDCBAECACDCCB                                                                      
+FURKAN      COÞAR       165001045ACCACEEDEBEBACEEDAADEDDEAAADCBE                                                                      
+FAÝK        YAMAN       165001036ACAEBEBDEBCCABEEDBCEDDDACEAEADE                                                                      
+ÝSMAÝL      KILI Ç      165009009BEADECDAABDCADAEBBCDBCECCABBCDA                                                                      
+CELÝL       MUT         155005032AD E BBEBADDADBEECEAEDBAAADBEAC                                                                      
+DOÐAN       BARLÝK      165001005ACCEDBBDBBAEADEEADBADDBDAEBEABA                                                                      
+ERDEM       KULLUKÇU    165001038BECBECDDECDCABAEDCEDBDEACCADCBA                                                                      
+SERCAN      TAPU        165001014BDDDEDDAAACCADCACBEDABCDCAADAAB                                                                      
+BARIÞ       ÖZTÜRKATALAY165001028ACCEAEBEBBDEECBECDBEABDDEECBDEA                                                                      
+SERDAR      BÝLGÝÇ      165001041BBADEADCEACEAACDABEAEBCBEDCECBB                                                                      
+RAÝF        SARICA      165005010ABCEEABDEBADBDABDDAACDDDADEBDDD                                                                      
+MÝKAÝL      KISA        165005019ACEE ABDBBDDCDAEDDEDADBDA D                                                                          
+BERKCAN     DÝLBER      165001020ABBBCBEDEBCEAACBDACDCDBBCEEDDCE                                                                      
+FARUK       KARACAOÐLU  165001001AACEBEDDEBCDABEEDAACCADBAEBDABE                                                                      
+MERT CAN    ÖZDEMÝR     165001044BDDACCDAAEDDADCBCAEECEDEBCCDBAD                                                                      
+ENES        AKBABA      165005017AAAEDEEB BADABEEEACAADDAAACBBAE                                                                      
+HALÝS       KÖKSALDI    165005001ACCEBDBDEBCEABCED BAAD B                                                                             
+ERAY        BAKAR       165001010ACBDACEDEBEEDBACEDBECABEADBECAD                                                                      
+EMRE        ERDOÐAN     165001006BEBDCACDADCAECABCECABEDBBADEDBE                                                                      
+CENGÝZHAN   YILMAZ      165001011AACEAEBCBBAEADCEACCBBCADACEACEE                                                                      
+BERKAY      VELÝ        165005038BAAECDDEABEAADCBCBADEBBCDBAEDAE                                                                      
+ÝBRAHÝM     YILMAZ      165001003BBAAECBEEEBCADCABEEDCBCDCE                                                                           
+AYDIN       ELDOÐAN     165005002AAEEEE DBBABEDCEAD  CC  A    E                                                                       
+MEHMET MELÝHTUTUÞ       165001009ACAAAABCDEDCBABCDEDCBAAEBDCCBDA                                                                      
+MERT MUSTAFAYILDIZ      165001046ACEBDBCDDBECADCEBDCBCCBEAEDBDAC                                                                      
+AHMET CAN   AKSU        165003014ACCAB BDEBCBA    DC     B   E                                                                        
+HARUN       YILMAZER    165001027BBDBCCECBCABACCEBEBDBCDDCACEBEA                                                                      
+EMRE        DÝKÝCÝ      165001019ABBBBBEEEEACDACBEBDAECABADBEBDA                                                                      
+HATÝCE      ZEYBEK      165001039AC E     B                                                                                           
+MELÝKE      AVCI        165001004B     DBE   AD B   DC A C                                                                            

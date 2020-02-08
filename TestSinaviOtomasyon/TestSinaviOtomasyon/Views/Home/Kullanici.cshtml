@@ -1,0 +1,91 @@
+﻿@using TestSinaviOtomasyon.Service
+@using TestSinaviOtomasyon.Common.DataTransferObjects;
+@{
+    ViewBag.Title = "Kullanici";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/Kullanici.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="listWrap">
+            <h3>Kullanıcı Listesi</h3>
+            <ul class="list custab">
+                <li>
+                    <span>ID</span>
+                    <span>ADI</span>
+                    <span>SOYADI</span>
+                    <span>SİCİLNUMARASI</span>
+                    <span>ŞİFRE</span>
+                    <span class="text-center">Actions</span>
+                    <span></span>
+                </li>
+                @{
+                    ServiceCode servis = new ServiceCode();
+                    foreach (var item in servis.KullaniciListele())
+                    {
+                        <li id="@item.kullanici_id" >
+                            <span>@item.kullanici_id</span>
+                            <span>@item.kullanici_ad</span>
+                            <span>@item.kullanici_soyadi</span>
+                            <span>@item.kullanici_sicilno</span>
+                            <span>@item.kullanici_sifre</span>
+                            <span class="text-center">
+                                <button type="button" class="btn btn-info btn-xs" onclick="kullaniciguncelleme(@item.kullanici_id)"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                                <button type="button" class="btn btn-danger btn-xs" onclick="kullanicisil(@item.kullanici_id)"><span class="glyphicon glyphicon-remove"> Sil</span></button>
+                            </span>
+                            <span></span>
+                        </li>
+                    }
+                }
+            </ul>
+            <button style="margin-left:89%" type="button"8 class="btn btn-primary btn-xs pull-right" onclick="kullanicieklemeekrani()"><b>+</b> Kullanıcı Ekle</button>
+        </div>
+    </div>
+
+    <div id="formkullanici" class="container">
+        <div class="row">
+            <br /><br />
+            <h3 id="h3ekle" style="margin-left:46%;">Kullanıcı Ekle</h3>
+            <h3 id="h3duzenle" style="margin-left:43.5%;">Kullanıcı Güncelle</h3>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="kullaniciform">
+                    <div class="form-group">
+                        <label for="kullanici_adi">Adı</label>
+                        <input type="text" class="form-control" id="adi" name="adi" placeholder="Adı" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="kullanici_soyadii">Soyadı</label>
+                        <input type="text" class="form-control" id="soyadi" name="soyadi" placeholder="Soyadı" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="kullanici_sicilno">Sicil Numarası</label>
+                        <input type="text" class="form-control" id="sicilnumarasi" name="sicilnumarasi" placeholder="Sicil Numarası" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="kullanici_sifre">Şifre</label>
+                        <input type="password" class="form-control" id="sifre" name="sifre" placeholder="Şifre" required />
+                    </div>
+
+                    <div class="form-check">
+                        <button type="button" class="btn btn-info btn-xs" style="width:100%;height:30px" id="guncellebtn" onclick="kullaniciduzenle()"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                    </div>
+                    <div class="form-check">
+                        <button type="button" class="btn btn-primary" style="width:100%" id="eklebtn" onclick="kullaniciekle()"><b>+</b> Ekle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/ProjectScripts/Kullanici.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+</body>
+</html>

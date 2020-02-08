@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+    <link href="~/Content/ProjectContent/Login.css" rel="stylesheet" />
+    <title>Giriş</title>
+</head>
+<body>
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+
+            <div class="fadeIn first">
+                <img src="~/image/images.png" id="icon" alt="User Icon" />
+                <h1>Kocaeli Üniversitesi</h1>
+            </div>
+
+            <div id="msg"><span style="color:red;">Kullanıcı Adı veya Şifreniz Hatalıdır.Lütfen Tekrar Deneyiniz.</span></div>
+            <form id="loginform">
+                <input type="text" id="kullanici_sicilno" class="fadeIn second" name="kullanici_sicilno" placeholder="Kullanıcı Adı" required />
+                <input type="password" id="kullanici_sifre" class="fadeIn third" name="kullanici_sifre" placeholder="Şifre" required />
+                <input type="button" class="fadeIn fourth" onclick="admin()" value="Admin Giriş" />
+                <input type="button" class="fadeIn fourth" onclick="ogretimuyesi()" value="Kullanıcı Giriş" />
+            </form>
+
+            <div id="formFooter">
+                <a class="underlineHover" href="https://www.kocaeli.edu.tr">Siteye Git</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="~/Scripts/ProjectScripts/Login.js"></script>
+</body>
+</html>

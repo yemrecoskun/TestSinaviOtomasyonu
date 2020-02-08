@@ -1,0 +1,88 @@
+﻿@using TestSinaviOtomasyon.Service;
+@using TestSinaviOtomasyon.Common.DataTransferObjects;
+
+@{
+    ViewBag.Title = "Sinav";
+    ServiceCode servis = new ServiceCode();
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/Sinav.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="formsinav" class="container">
+        <div class="row">
+            <br /><br />
+            <h3 id="h3ekle" style="margin-left:46%;">TEST SINAVI OKU</h3>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                @using (Html.BeginForm("Sinav", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <form id="formsinav" method="post">
+
+                        <div class="form-group">
+                            <label for="dersatama_id">Ders - Bölüm</label>
+                            <select style="height:100%!important" class="form-control" id="dersatama_id" name="dersatama_id" required>
+                                @foreach (var item in servis.DonemListele())
+                                {
+                                    if (item.donem_durum == "Aktif")
+                                    {
+                                        Globals.Globals.aktif = item.donem_adi;
+                                    }
+                                }
+                                @{
+                                    foreach (var item in servis.DersAtamaListele())
+                                    {
+                                        if (item.donem_adi == Globals.Globals.aktif)
+                                        {
+                                            <option value="@item.dersatama_id">@item.ders_adi - @item.bolum_adi - @item.kullanici_ad @item.kullanici_soyadi</option>
+                                        }
+
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sinavturu">Sınav Türü</label>
+                            <select id="sinav_turu" name="sinav_turu" style="height:100%!important" class="form-control" required>
+                                <option value="vize">vize</option>
+                                <option value="final">final</option>
+                                <option value="bütünleme">bütünleme</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cevapanahtari">Cevap Anahtarı</label>
+                            <input type="file" class="form-control" id="cevapanahtari" name="cevapanahtari" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sinavsonuclari">Sınav Sonuçları</label>
+                            <input type="file" class="form-control" id="sinavsonuclari" name="sinavsonuclari" required />
+                        </div>
+                        <div class="form-check">
+                            <button type="submit" class="btn btn-primary" style="width:100%;background-color:green">Sınavı Oku</button>
+                        </div>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+    @if(ViewBag.Message != null)
+    {
+    <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+    </script>
+    }
+    <script src="~/Scripts/ProjectScripts/sinav.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

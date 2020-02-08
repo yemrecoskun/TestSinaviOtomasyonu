@@ -1,0 +1,235 @@
+﻿h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: blue;
+    color: white;
+    font-weight: 600;
+    opacity: 0.5;
+    padding: 10px;
+    border-radius: 15px;
+}
+nav {
+    width: 750px;
+    margin: 1em auto;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+    ul.dropdown {
+        position: relative;
+        width: 100%;
+    }
+
+        ul.dropdown li {
+            font-weight: bold;
+            float: left;
+            width: 180px;
+            position: relative;
+            background: #ecf0f1;
+        }
+
+        ul.dropdown a:hover {
+            color: #000;
+        }
+
+        ul.dropdown li a {
+            display: block;
+            padding: 20px 8px;
+            color: #34495e;
+            position: relative;
+            z-index: 2000;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+            ul.dropdown li a:hover,
+            ul.dropdown li a.hover {
+                background: #3498db;
+                position: relative;
+                color: #fff;
+                transition: 0.5s ease;
+            }
+
+        ul.dropdown ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+            z-index: 1000;
+        }
+
+
+            ul.dropdown ul li {
+                font-weight: normal;
+                background: #f6f6f6;
+                color: #000;
+                border-bottom: 1px solid #ccc;
+            }
+
+                ul.dropdown ul li a {
+                    display: block;
+                    color: #34495e !important;
+                    background: #eee !important;
+                }
+
+                    ul.dropdown ul li a:hover {
+                        display: block;
+                        background: #3498db !important;
+                        color: #fff !important;
+                    }
+
+                    ul.dropdown ul li a:hover {
+                        display: block;
+                        background: #3498db;
+                        color: #fff;
+                    }
+
+.drop > a {
+    position: relative;
+}
+
+    .drop > a:after {
+        content: "";
+        position: absolute;
+        right: 11px;
+        top: 46%;
+        border-left: 10px solid transparent;
+        border-top: 10px solid #333;
+        border-right: 10px solid transparent;
+        z-index: 999;
+    }
+
+    .drop > a:hover:after {
+        content: "";
+        border-left: 10px solid transparent;
+        border-top: 10px solid #fff;
+        border-right: 10px solid transparent;
+    }
+.menu-area {
+    background: #d61a5e
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0 solid transition !important;
+    border: 0 solid rgba(0,0,0,.15);
+    border-radius: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+.mainmenu a, .navbar-default .navbar-nav > li > a, .mainmenu ul li a, .navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    font-family: 'Roboto',sans-serif;
+    display: block !important;
+}
+
+.mainmenu .active a, .mainmenu .active a:focus, .mainmenu .active a:hover, .mainmenu li a:hover, .mainmenu li a:focus, .navbar-default .navbar-nav > .show > a, .navbar-default .navbar-nav > .show > a:focus, .navbar-default .navbar-nav > .show > a:hover {
+    color: #fff;
+    background: #4CAF50;
+    outline: 0;
+}
+/*==========Sub Menu=v==========*/
+.mainmenu .collapse ul > li:hover > a {
+    background: #4CAF50;
+}
+
+.mainmenu .collapse ul ul > li:hover > a, .navbar-default .navbar-nav .show .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .show .dropdown-menu > li > a:hover {
+    background: #4CAF50;
+}
+
+.mainmenu .collapse ul ul ul > li:hover > a {
+    background: #4CAF50;
+}
+
+.mainmenu .collapse ul ul, .mainmenu .collapse ul ul.dropdown-menu {
+    background: #1565C0;
+}
+
+    .mainmenu .collapse ul ul ul, .mainmenu .collapse ul ul ul.dropdown-menu {
+        background: #1E88E5
+    }
+
+        .mainmenu .collapse ul ul ul ul, .mainmenu .collapse ul ul ul ul.dropdown-menu {
+            background: #64B5F6
+        }
+
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu {
+    background: none;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+    .mainmenu .collapse ul li:hover > ul {
+        display: block
+    }
+
+    .mainmenu .collapse ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 250px;
+        display: none
+    }
+        /*******/
+        .mainmenu .collapse ul ul li {
+            position: relative
+        }
+
+            .mainmenu .collapse ul ul li:hover > ul {
+                display: block
+            }
+
+        .mainmenu .collapse ul ul ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            min-width: 250px;
+            display: none
+        }
+            /*******/
+            .mainmenu .collapse ul ul ul li {
+                position: relative
+            }
+
+                .mainmenu .collapse ul ul ul li:hover ul {
+                    display: block
+                }
+
+            .mainmenu .collapse ul ul ul ul {
+                position: absolute;
+                top: 0;
+                left: -100%;
+                min-width: 250px;
+                display: none;
+                z-index: 1
+            }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav .show .dropdown-menu .dropdown-menu > li > a {
+        padding: 16px 15px 16px 35px
+    }
+
+    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu > li > a {
+        padding: 16px 15px 16px 45px
+    }
+}

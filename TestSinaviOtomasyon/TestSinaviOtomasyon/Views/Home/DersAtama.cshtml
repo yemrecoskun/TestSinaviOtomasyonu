@@ -1,0 +1,114 @@
+﻿@using TestSinaviOtomasyon.Service
+@using TestSinaviOtomasyon.Common.DataTransferObjects;
+@{
+    ViewBag.Title = "Kullanici";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/DersAtama.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="listWrap">
+            <h3>Ders Atama Listesi</h3>
+            <ul class="list custab">
+                <li>
+                    <span>ID</span>
+                    <span>ÖĞRETİM ÜYESİ</span>
+                    <span>DÖNEM</span>
+                    <span>BÖLÜM</span>
+                    <span>DERS</span>
+                    <span class="text-center">Actions</span>
+                    <span></span>
+                </li>
+                @{
+                    ServiceCode servis = new ServiceCode();
+                    foreach (var item in servis.DersAtamaListele())
+                    {
+                        <li id="@item.dersatama_id">
+                            <span>@item.dersatama_id</span>
+                            <span>@item.kullanici_ad @item.kullanici_soyadi</span>
+                            <span>@item.donem_adi</span>
+                            <span>@item.bolum_adi</span>
+                            <span>@item.ders_adi</span>
+                            <span class="text-center">
+                                <button type="submit" class="btn btn-info btn-xs" onclick="dersatamaguncelleme(@item.dersatama_id)"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                                <button type="submit" class="btn btn-danger btn-xs" onclick="dersatamasil(@item.dersatama_id)"><span class="glyphicon glyphicon-remove"> Sil</span></button>
+                            </span>
+                            <span></span>
+                        </li>
+                    }
+                }
+            </ul>
+            <button style="margin-left:89.5%" type="button" class="btn btn-primary btn-xs pull-right" onclick="dersatamaeklemeekrani()"><b>+</b> Ders Ata</button>
+        </div>
+    </div>
+
+    <div id="formdersatama" class="container">
+        <div class="row">
+            <br /><br />
+            <h3 id="h3ekle" style="margin-left:46%;">Ders Atama</h3>
+            <h3 id="h3duzenle" style="margin-left:43.5%;">Ders Atamayı Güncelle</h3>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <form id="dersatamaform">
+                    <div class="form-group">
+                        <label for="k_adi">Öğretim Üyesi</label>
+                        <select style="height:100%!important" class="form-control" id="kullanici_id" name="kullanici_id" required>
+                            <option selected value="Seçiniz">Seçiniz</option>
+                            @{foreach (var item in servis.KullaniciListele())
+                                {
+                                    <option value="@item.kullanici_id">@item.kullanici_ad @item.kullanici_soyadi</option>
+                                } }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="k_adi">Bölüm </label>
+                        <select style="height:100%!important" class="form-control" id="bolum_adi" name="bolum_adi" required>
+                            <option selected value="Seçiniz">Seçiniz</option>
+                            @{foreach (var item in servis.BolumListele())
+                                {
+                                    <option value="@item.bolum_ad">@item.bolum_ad</option>
+                                } }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="k_adi">Dönem</label>
+                        <select style="height:100%!important" class="form-control" id="donem_adi" name="donem_adi" required>
+                            <option selected value="Seçiniz">Seçiniz</option>
+                            @{foreach (var item in servis.DonemListele())
+                                {
+                                    <option value="@item.donem_adi">@item.donem_adi</option>
+                                } }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="k_adi">Ders</label>
+                        <select style="height:100%!important" class="form-control" id="ders_adi" name="ders_adi" required>
+                            <option selected value="Seçiniz">Seçiniz</option>
+                            @{foreach (var item in servis.DersListele())
+                                {
+                                    <option value="@item.ders_adi">@item.ders_adi</option>
+                                } }
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-info btn-xs" style="width:100%;height:30px" id="guncellebtn" onclick="dersatamaduzenle()"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                    </div>
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-primary" style="width:100%" id="eklebtn" onclick="dersatamaekle()"><b>+</b> Ekle</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/ProjectScripts/DersAtama.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+</body>
+</html>

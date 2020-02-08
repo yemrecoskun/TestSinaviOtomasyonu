@@ -1,0 +1,131 @@
+﻿@using TestSinaviOtomasyon.Service
+@{
+    ViewBag.Title = "OgretimUyesiSayfa";
+    ServiceCode servis = new ServiceCode();
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/OgretimUyesi.css" rel="stylesheet" />
+</head>
+<body>
+    <center><h1 style="color:green">KOCAELİ ÜNİVERSİTESİ BİLGİ SİSTEM</h1></center>
+    <br />
+    <br />
+    <br />
+    <div class="box" style="margin-left:auto;margin-right:auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green;">
+                        <div class="title">
+                            <h3>KULLANICI</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Kullanıcı(öğretim görevlisi) listeler,günceller,ekler,siler</span>
+                        </div>
+                        <a href="/Home/Kullanici">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>FAKÜLTE</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Fakülte listeler,günceller,ekler,siler</span>
+                        </div>
+                        <a href="/Home/Fakulte">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>BÖLÜM</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Bölüm listeler,günceller,ekler,siler</span>
+                        </div>
+                        <a href="/Home/Bolum">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>KAZANIMLAR</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Bölüme ve Derse ait kazanımları listeler,günceller,ekler,siler</span>
+                        </div>
+                        <a href="/Home/Kazanim">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>DÖNEM</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Dönemi listeler,günceller,ekler,siler</span>
+                        </div>
+                        <a href="/Home/Donem">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>DERSLER</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Kullanıcı(öğretim görevlisi) listeler,günceller,ekler,siler</span>
+                        </div>
+                        <a href="/Home/Ders">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>DERS ATAMA</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Dersin Aktif döneminde uygun öğretim görevlisine seçerek ekler,listeler,günceller,siler</span>
+                        </div>
+                        <a href="/Home/DersAtama">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>TEST SINAVI OKU</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Aktif dönemde verilen dersleri okutur(test sınavı)</span>
+                        </div>
+                        <a href="/Home/Sinav">GİT</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="box-part text-center" style="background-color:green">
+                        <div class="title">
+                            <h3>DERS LİSTESİ</h3>
+                        </div>
+                        <div class="title">
+                            <span>Açıklama: Admin Tarafından Aktif Dönemdeki bölümü seçerek bölümde açılan dersleri listeler ve listede sınav linkleri vardır okunan sınavı ornek.xlsx formatında açar </span>
+                        </div>
+                        <a href="/Home/SinavListele">GİT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+C:\Users\jrewi\OneDrive\Masaüstü\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\bin\Debug\TestSinaviOtomasyon.Common.dll
+C:\Users\jrewi\OneDrive\Masaüstü\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\bin\Debug\TestSinaviOtomasyon.Common.pdb
+C:\Users\jrewi\OneDrive\Masaüstü\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.csprojAssemblyReference.cache
+C:\Users\jrewi\OneDrive\Masaüstü\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.csproj.CoreCompileInputs.cache
+C:\Users\jrewi\OneDrive\Masaüstü\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.dll
+C:\Users\jrewi\OneDrive\Masaüstü\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.pdb
+D:\ders\projeler\171307028_YunusEmre_COSKIN_161307028_Alihan_SARI\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\bin\Debug\TestSinaviOtomasyon.Common.dll
+D:\ders\projeler\171307028_YunusEmre_COSKIN_161307028_Alihan_SARI\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\bin\Debug\TestSinaviOtomasyon.Common.pdb
+D:\ders\projeler\171307028_YunusEmre_COSKIN_161307028_Alihan_SARI\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.csprojAssemblyReference.cache
+D:\ders\projeler\171307028_YunusEmre_COSKIN_161307028_Alihan_SARI\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.csproj.CoreCompileInputs.cache
+D:\ders\projeler\171307028_YunusEmre_COSKIN_161307028_Alihan_SARI\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.dll
+D:\ders\projeler\171307028_YunusEmre_COSKIN_161307028_Alihan_SARI\TestSinaviOtomasyon\TestSinaviOtomasyon.Common\obj\Debug\TestSinaviOtomasyon.Common.pdb

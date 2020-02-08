@@ -1,0 +1,83 @@
+﻿@using TestSinaviOtomasyon.Service;
+@using TestSinaviOtomasyon.Common.DataTransferObjects;
+@{
+    ViewBag.Title = "SinavListele";
+    ServiceCode servis = new ServiceCode();
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/Ders.css" rel="stylesheet" />
+</head>
+<body>
+
+    @foreach (var item in servis.DonemListele())
+    {
+        if (item.donem_durum == "Aktif")
+        {
+            Globals.Globals.aktif = item.donem_adi;
+        }
+    }
+    <h5 id="donem_adi">@Globals.Globals.aktif</h5>
+    <div class="form-group">
+        <label for="k_adi">Bölüm </label>
+        <select style="height:100%!important" class="form-control" id="bolum_adi" name="bolum_adi" required>
+            <option selected value="Seçiniz">Seçiniz</option>
+
+            @{foreach (var item in servis.AktifDonemDersler())
+                {
+                    <option value="@item.bolum_adi">@item.bolum_adi </option>
+                }
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="form-control" style="background-color:green;color:white;" onclick="ara()">ARA</button>
+    </div>
+    <span id="donembolum"></span>
+    <div class="container">
+        <div class="listWrap">
+            <ul class="list custab">
+                <li id="genel">
+                    <span>ID</span>
+                    <span>DERS</span>
+                    <span>Vize</span>
+                    <span>Final</span>
+                    <span>Bütünleme</span>
+                    <span></span>
+                </li>
+                @{
+                    foreach (var item in servis.DersAtamaListele())
+                    {
+                        <li class="alan" id="@item.dersatama_id">
+                            <span>@item.dersatama_id</span>
+                            <span>@item.ders_adi</span>
+                            <span>
+                                <button class="btn-danger" onclick="sinav_vize(@item.dersatama_id)">Vize</button>
+                            </span>
+                            <span>
+                                <button class="btn-danger" onclick="sinav_final(@item.dersatama_id)">Final</button>
+                            </span>
+                            <span>
+                                <button class="btn-danger" onclick="sinav_butunleme(@item.dersatama_id)">Bütünleme</button>
+                            </span>
+                            <span></span>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(".alan").hide();
+        $("#genel").show();
+    </script>
+    <script src="~/Scripts/ProjectScripts/SinavListele.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿@using TestSinaviOtomasyon.Service
+@using TestSinaviOtomasyon.Common.DataTransferObjects;
+@{
+    ViewBag.Title = "Donem";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/Donem.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="listWrap">
+            <h3>Dönem Listesi</h3>
+            <ul class="list custab">
+                <li>
+                    <span>ID</span>
+                    <span>DONEM ADI</span>
+                    <span> DONEM DURUM</span>
+                    <span class="text-center">Actions</span>
+                    <span></span>
+                </li>
+                @{
+                    ServiceCode servis = new ServiceCode();
+                    foreach (var item in servis.DonemListele())
+                    {
+                        <li id="@item.donem_id">
+                            <span>@item.donem_id</span>
+                            <span>@item.donem_adi</span>
+                            <span>@item.donem_durum</span>
+                            <span class="text-center">
+                                <button type="submit" class="btn btn-info btn-xs" onclick="donemguncelleme(@item.donem_id)"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                                <button type="submit" class="btn btn-danger btn-xs" onclick="donemsil(@item.donem_id)"><span class="glyphicon glyphicon-remove"> Sil</span></button>
+                            </span>
+                            <span></span>
+                        </li>
+                    }
+                }
+            </ul>
+            <button style="margin-left:89.5%" type="button" class="btn btn-primary btn-xs pull-right" onclick="donemeklemeekrani()"><b>+</b> Dönem Ekle</button>
+        </div>
+    </div>
+
+    <div id="formdonem" class="container">
+        <div class="row">
+            <br /><br />
+            <h3 id="h3ekle" style="margin-left:46%;">Dönem Ekle</h3>
+            <h3 id="h3duzenle" style="margin-left:43.5%;">Dönem Güncelle</h3>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="donemform">
+                    <div class="form-group">
+                        <label for="d_adi">Adı</label>
+                        <input type="text" class="form-control" id="donem_adi" name="donem_adi" placeholder="Dönem Adı" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="d_adi">DURUM</label><br />
+                        <input type="radio"  name="donem_durum" value="Aktif" required /> Aktif<input type="radio" name="donem_durum" value="Pasif" required /> Pasif
+                    </div>
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-info btn-xs" style="width:100%;height:30px" id="guncellebtn" onclick="donemduzenle()"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                    </div>
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-primary" style="width:100%" id="eklebtn" onclick="donemekle()"><b>+</b> Ekle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/ProjectScripts/Donem.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+</body>
+</html>

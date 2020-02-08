@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="~/Content/ProjectContent/Layout.css" rel="stylesheet" />
+    <script src="~/Scripts/ProjectScripts/Layout.js"></script>
+</head>
+<body>
+
+
+    <div id="menu_area" class="menu-area" style="background-color:green" >
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-light navbar-expand-lg mainmenu" >
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                        <ul class="navbar-nav mr-auto">
+                            <li>
+                                <img src="~/image/images1.png" style="width:95px;height:55px;margin-right:90%" />
+                            </li>
+                            <li><a href="/Home/AnaSayfa">AnaSayfa <span class="sr-only">(current)</span></a></li>
+                            <li><a href="/Home/Kullanici">Kullanıcı</a></li>
+                            <li><a href="/Home/Fakulte">Fakülte</a></li>
+                            <li><a href="/Home/Bolum">Bölüm</a></li>
+                            <li><a href="/Home/Kazanim">Kazanım</a></li>
+                            <li><a href="/Home/Donem">Dönem</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ders</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a href="/Home/Ders">Ders Listele</a></li>
+                                    <li><a href="/Home/DersAtama">Ders Atama </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sınav</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a href="/Home/Sinav">Sınav Oku</a></li>
+                                    <li><a href="/Home/SinavListele">Ders Listele</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/Home/Login">ÇIKIŞ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Test Sınavı Otomasyonu</p>
+        </footer>
+    </div>
+
+</body>
+</html>

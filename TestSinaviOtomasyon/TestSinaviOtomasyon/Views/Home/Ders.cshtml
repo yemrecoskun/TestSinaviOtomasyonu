@@ -1,0 +1,98 @@
+﻿@using TestSinaviOtomasyon.Service
+@using TestSinaviOtomasyon.Common.DataTransferObjects;
+@{
+    ViewBag.Title = "Ders";
+    ServiceCode servis = new ServiceCode();
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/Ders.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="listWrap">
+            <h3>Ders Listesi</h3>
+            <ul class="list custab">
+                <li>
+                    <span>ID</span>
+                    <span>DERS</span>
+                    <span>KAZANIM</span>
+                    <span class="text-center">Actions</span>
+                    <span></span>
+                </li>
+                @{
+                    foreach (var item in servis.DersListele())
+                    {
+                        <li id="@item.ders_id">
+                            <span>@item.ders_id</span>
+                            <span>@item.ders_adi</span>
+                            <span class="text-center">
+                                <button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-block btn-xs" onclick="kazanim_turu_id(@item.ders_id)">Kazanimlar</button>
+                            </span>
+                            <span class="text-center">
+                                <button type="submit" class="btn btn-info btn-xs" onclick="dersguncelleme(@item.ders_id)"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                                <button type="submit" class="btn btn-danger btn-xs" onclick="derssil(@item.ders_id)"><span class="glyphicon glyphicon-remove"> Sil</span></button>
+                            </span>
+                            <span></span>
+                        </li>
+                    }
+                }
+            </ul>
+            <button style="margin-left:89.5%" type="button" class="btn btn-primary btn-xs pull-right" onclick="derseklemeekrani()"><b>+</b> Ders Ekle</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                        <center>
+                            <span><strong>Kazanımlar </strong></span>
+                            <hr>
+                            <ol></ol>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Çıkış</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="formders" class="container">
+        <div class="row">
+            <br /><br />
+            <h3 id="h3ekle" style="margin-left:46%;">Ders Ekle</h3>
+            <h3 id="h3duzenle" style="margin-left:43.5%;">Ders Güncelle</h3>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="dersform">
+                    <div class="form-group">
+                        <label for="d_adi">Adı</label>
+                        <input type="text" class="form-control" id="ders_adi" name="ders_adi" placeholder="Ders Adı" required />
+                    </div>
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-info btn-xs" style="width:100%;height:30px" id="guncellebtn" onclick="dersduzenle()"><span class="glyphicon glyphicon-edit"> Güncelle</span></button>
+                    </div>
+                    <div class="form-check">
+                        <button type="submit" class="btn btn-primary" style="width:100%" id="eklebtn" onclick="dersekle()"><b>+</b> Ekle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/ProjectScripts/Ders.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿@using TestSinaviOtomasyon.Service
+@{
+    Layout = null;
+    ServiceCode servis = new ServiceCode();
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/ProjectContent/Ders.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="width:100%;background-color:green;height:100px">
+        <img src="~/image/images1.png" style="margin-left:auto;margin-right:auto;float:left;height:100px;" />
+        @foreach (var item in servis.KullaniciListele())
+        {
+            if (Globals.Globals.ogretim_id == item.kullanici_id)
+            {
+                <h1 style="margin-left:auto;margin-right:auto;margin-top:50px;padding:30px;">KOCAELİ ÜNİVERSİTESİ - ÖĞRETİM ÜYESİ - @item.kullanici_ad @item.kullanici_soyadi</h1>
+            }
+        }
+    </div>
+<br />
+    @foreach(var item in servis.DonemListele())
+    {
+        if(item.donem_durum == "Aktif")
+        {
+<center><h3>@item.donem_adi</h3></center>
+        }
+    }
+    <div class="container">
+        <div class="listWrap">
+            <ul class="list custab">
+                <li id="genel">
+                    <span>ID</span>
+                    <span>DERS</span>
+                    <span>BÖLÜM</span>
+                    <span>Vize</span>
+                    <span>Final</span>
+                    <span>Bütünleme</span>
+                    <span></span>
+                </li>
+                @{
+                    foreach (var item in servis.DersAtamaListele())
+                    {
+                        var durum = "";
+                        foreach (var item1 in servis.DonemListele())
+                        {
+                            if (item1.donem_adi == item.donem_adi) { durum = item1.donem_durum; }
+                        }
+                        if (item.kullanici_ad == Globals.Globals.id && durum == "Aktif")
+                        {
+                            <li class="alan" id="@item.dersatama_id">
+                                <span>@item.dersatama_id</span>
+                                <span>@item.ders_adi</span>
+                                <span>@item.bolum_adi</span>
+                                <span>
+                                    <button class="btn-danger" onclick="sinav_vize(@item.dersatama_id)">Vize</button>
+                                </span>
+                                <span>
+                                    <button class="btn-danger" onclick="sinav_final(@item.dersatama_id)">Final</button>
+                                </span>
+                                <span>
+                                    <button class="btn-danger" onclick="sinav_butunleme(@item.dersatama_id)">Bütünleme</button>
+                                </span>
+                                <span></span>
+                            </li>
+                        }
+                    }
+                }
+            </ul>
+        </div>
+        <br />
+        <div class="form-check">
+            <a href="/Home/OgretimUyesiSayfa"><button type="submit" class="btn btn-danger" style="width:100%;">GERİ</button></a>
+        </div>
+    </div>
+    <script src="~/Scripts/ProjectScripts/OgretimDersListele.js"></script>
+</body>
+</html>
