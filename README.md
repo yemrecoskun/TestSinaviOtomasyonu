@@ -1,3 +1,4 @@
+# English Readme: [README-EN.md](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/README-EN.md)
 # TestSinaviOtomasyonu
 ## Projemizde Kullanılan Programlar 
 - ASP.NET MVC
