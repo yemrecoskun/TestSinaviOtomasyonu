@@ -32,7 +32,7 @@ link should be given.(Excel opens the file.)
 - Test exam reading process, after the relevant user (instructor) has logged in to the system
 then the Department, semester, course and type of exam (midterm,final,Bute))
 he should choose. * The text file in his hand should be loaded into the system. (example [sınav.txt](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/sinavsonuclari.txt).)
-Then the answer key * must be installed on the system.(example [cevap.txt](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/cevapanahtari.txt)
+Then the answer key * must be installed on the system.(example [cevap.txt](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/cevapanahtari.txt))
 Students ' exam results should be listed with The evaluate button. These results should also be saved in the excel file.
 - Question - based assessment process, which of each student from the test reading process
 creates a list of how many Points you get from the question. Each class also
