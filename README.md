@@ -32,7 +32,7 @@ link verilmelidir.(Excel dosyası açar.)
 - Test sınavı okutma işlemi, ilgili kullanıcı (öğretim elemanı) sisteme giriş yaptıktan
 sonra sınavını okutmak istediği bölümü, yarıyılı, dersi ve sınav türünü (vize,final,büt)
 seçmelidir. Elinde yer alan metin dosyasını * sisteme yüklemelidir. (örnek [sınav.txt](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/sinavsonuclari.txt).)
-Sonrasında cevap anahtarı* sisteme yüklenmelidir.(örnek [cevap.txt](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/cevapanahtari.txt)
+Sonrasında cevap anahtarı* sisteme yüklenmelidir.(örnek [cevap.txt](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/cevapanahtari.txt))
 Değerlendir düğmesi ile öğrencilerin sınav sonuçları listelenmelidir. Aynı zamanda bu sonuçlar excel dosyasına kaydedilmelidir.
 - Soru bazlı değerlendirme işlemi, test okuma işleminden her öğrencinin hangi
 sorudan kaç puan aldığını gösteren bir liste oluşturur. Ayrıca sınıfın her
