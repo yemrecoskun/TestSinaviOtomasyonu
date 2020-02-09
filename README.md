@@ -43,3 +43,11 @@ ait sorular seçilmelidir. Seçilmiş olan sorulara göre kazanım ortalama puan
 başarı puanları hesaplanmalıdır. Sorulara kazanımı seçilenleri excelin 3.alanına kaydeder, değerlendirmeyi 4.alana kaydeder.
 ## Programın Kullanımı
 Programın kullanımı için [buraya](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/help.pdf) gözatınız.
+## Programdaki Kodların Kullanımı
+<b> Program C# Katmanlı Mimari ile çalışmaktadır.</b>
+- [TestSinaviOtomasyon.Common](https://github.com/yemrecoskun/TestSinaviOtomasyonu/tree/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Common) katmanı ile DataTransferObjects oluşturdum. DTOName.cs kısmında ilgili alanda yer alabilecek değişkenleri tanımladım. ([örnek](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Common/DataTransferObjects/DTOBolum.cs))
+- [TestSinaviOtomasyon.Entity](https://github.com/yemrecoskun/TestSinaviOtomasyonu/tree/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Entity)  katmanı ile veritabanı ile alakalı tüm işlemleri gerçekleştirir. Common Katmanını bu katmana çağırarak ilgili alandaki verileri çekerek işlemler yapar.([örnek](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Entity/EBolum.cs))
+- [TestSinaviOtomasyon.Service]
+(https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Service/Service.cs) bu katman ile Entity katmanında yapılan işlemleri maine servis eder.
+- [TestSinaviOtomasyon.Globals](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Globals/Globals.cs) bu katman ile geçici global değişkenler tanımlanır. Bu katman diğer katmandan bağımsız çalışır
+- [TestSinaviOtomasyon](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/TestSinaviOtomasyon/TestSinaviOtomasyon/Controllers/HomeController.cs) bu katman ana katmandır. Buraya Service code tanımlayarak serviste bulunan işlemleri çağırıyoruz. 
