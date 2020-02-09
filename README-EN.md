@@ -1,4 +1,4 @@
-# Test Test Automation
+# Test Exam Automation
 ## Programs Used In Our Project 
 - ASP.NET MVC
 - MySQL Workbech
@@ -42,7 +42,7 @@ gains should be listed. It should also be listed in the questions. Every win
 the questions that belong should be selected. Average score and gain according to selected questions
 success scores must be calculated. Excelin 3.saves field, evaluation 4.saves space.
 ## To Use The Program
-For the use of the program [here] (https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/help.pdf) browse.
+For the use of the program [here](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/help.pdf) browse.
 ## Use Of Code In The Program
 <b> the Program works with C# Layered Architecture.< / b>
 - [TestSinaviOtomasyon.Common](https://github.com/yemrecoskun/TestSinaviOtomasyonu/tree/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Common) layer with DataTransferObjects created. DTOName.in the cs section, I have defined the variables that may be included in the relevant field. ([örnek](https://github.com/yemrecoskun/TestSinaviOtomasyonu/blob/master/TestSinaviOtomasyon/TestSinaviOtomasyon.Common/DataTransferObjects/DTOBolum.cs))
